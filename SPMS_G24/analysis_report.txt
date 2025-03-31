@@ -1,0 +1,422 @@
+*** Parking Booking – ACCEPTED / fcfs ***
+
+member_A has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-10   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-11   09:00   22:00       Reservation  valetPark
+                                              inflationService
+
+2025-05-15   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+member_B has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-10   08:00   21:00       Reservation  locker
+                                              umbrella
+
+2025-05-11   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   08:00   21:00       Reservation  battery
+                                              cable
+
+2025-05-15   08:00   21:00       Reservation  locker
+                                              umbrella
+
+
+member_C has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-10   10:00   16:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   10:00   16:00       Parking      locker
+                                              battery
+                                              valetPark
+                                              umbrella
+                                              cable
+                                              inflationService
+
+2025-05-15   10:00   16:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+member_E has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-11   11:00   17:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   08:00   21:00       *            battery
+                                              valetPark
+                                              cable
+                                              inflationService
+
+
+- End -
+==========================================================
+
+
+*** Parking Booking – REJECTED / fcfs ***
+
+member_A (there are 1 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-13   10:00   15:00       Parking      locker
+                                              battery
+                                              valetPark
+                                              umbrella
+                                              cable
+                                              inflationService
+
+
+member_B (there are 2 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-10   08:00   21:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+2025-05-11   09:00   22:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+
+member_D (there are 1 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-15   08:00   21:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+
+- End -
+==========================================================
+
+
+*** Parking Booking – ACCEPTED / prio ***
+
+member_A has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-11   09:00   22:00       Reservation  valetPark
+                                              inflationService
+
+2025-05-10   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   10:00   15:00       Parking      locker
+                                              battery
+                                              valetPark
+                                              umbrella
+                                              cable
+                                              inflationService
+
+2025-05-15   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+member_B has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-10   08:00   21:00       Reservation  locker
+                                              umbrella
+
+2025-05-13   08:00   21:00       Reservation  battery
+                                              cable
+
+2025-05-15   08:00   21:00       Reservation  locker
+                                              umbrella
+
+2025-05-11   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+member_C has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-10   10:00   16:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   10:00   16:00       Parking      locker
+                                              battery
+                                              valetPark
+                                              umbrella
+                                              cable
+                                              inflationService
+
+2025-05-15   10:00   16:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+member_E has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-11   11:00   17:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+- End -
+==========================================================
+
+
+*** Parking Booking – REJECTED / prio ***
+
+member_B (there are 2 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-10   08:00   21:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+2025-05-11   09:00   22:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+
+member_D (there are 1 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-15   08:00   21:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+
+member_E (there are 1 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-13   08:00   21:00       *            battery
+                                              valetPark
+                                              cable
+                                              inflationService
+
+
+- End -
+==========================================================
+
+
+*** Parking Booking – ACCEPTED / opti ***
+
+member_A has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-11   09:00   22:00       Reservation  valetPark
+                                              inflationService
+
+
+member_B has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-15   08:00   21:00       Reservation  locker
+                                              umbrella
+
+2025-05-13   08:00   21:00       Reservation  battery
+                                              cable
+
+2025-05-10   08:00   21:00       Reservation  locker
+                                              umbrella
+
+2025-05-11   09:00   22:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+2025-05-10   08:00   21:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+
+member_C has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-15   10:00   16:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   10:00   16:00       Parking      locker
+                                              battery
+                                              valetPark
+                                              umbrella
+                                              cable
+                                              inflationService
+
+2025-05-10   10:00   16:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+member_D has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-15   08:00   21:00       *            locker
+                                              valetPark
+                                              umbrella
+                                              inflationService
+
+
+member_E has the following bookings:
+Date         Start   End         Type         Device
+==========================================================
+2025-05-11   11:00   17:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   08:00   21:00       *            battery
+                                              valetPark
+                                              cable
+                                              inflationService
+
+
+- End -
+==========================================================
+
+
+*** Parking Booking – REJECTED / opti ***
+
+member_A (there are 3 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-10   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+2025-05-13   10:00   15:00       Parking      locker
+                                              battery
+                                              valetPark
+                                              umbrella
+                                              cable
+                                              inflationService
+
+2025-05-15   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+member_B (there are 1 bookings rejected):
+Date         Start   End         Type         Essentials
+==========================================================
+2025-05-11   10:00   15:00       Parking      battery
+                                              locker
+                                              valetPark
+                                              cable
+                                              umbrella
+                                              inflationService
+
+
+- End -
+==========================================================
+
+
+*** Parking Booking Manager – Summary Report ***
+Performance:
+ For FCFS:
+    Total Number of Bookings Received: 20 (100.0%)
+          Number of Bookings Assigned: 12 (75.0%)
+          Number of Bookings Rejected: 4 (25.0%)
+    Utilization of Time Slot:
+    locker – 12.9%
+    umbrella – 12.9%
+    battery – 12.9%
+    cable – 12.9%
+    valetPark – 12.9%
+    inflationservice – 12.9%
+    Invalid request(s) made: 4
+ For PRIO:
+    Total Number of Bookings Received: 20 (100.0%)
+          Number of Bookings Assigned: 12 (75.0%)
+          Number of Bookings Rejected: 4 (25.0%)
+    Utilization of Time Slot:
+    locker – 13.9%
+    umbrella – 13.9%
+    battery – 11.3%
+    cable – 11.3%
+    valetPark – 11.3%
+    inflationservice – 11.3%
+    Invalid request(s) made: 4
+ For OPTI:
+    Total Number of Bookings Received: 20 (100.0%)
+          Number of Bookings Assigned: 12 (75.0%)
+          Number of Bookings Rejected: 4 (25.0%)
+    Utilization of Time Slot:
+    locker – 17.7%
+    umbrella – 17.7%
+    battery – 9.9%
+    cable – 9.9%
+    valetPark – 17.7%
+    inflationservice – 17.7%
+    Invalid request(s) made: 4
